@@ -5,10 +5,9 @@ function getIt(){
   })
 }
 
-function frameIt(){
-  $('img').on('load', function(){
-    const minion = document.querySelector('img')
-    minion.className = 'tasty'
+function frameIt() {
+  $('img').on('load', function() {
+    $('img').addClass('tasty')
   })
 }
 
@@ -23,7 +22,6 @@ function submitIt(){
     alert('Your form is going to be submitted now.')
   })
 }
-
 
 $(document).ready(function(){
 
